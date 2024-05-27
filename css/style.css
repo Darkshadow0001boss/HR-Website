@@ -1,0 +1,267 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background for Body */
+/* Background for Body */
+/* Background for Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1264de; /* Background color */
+    background-image: url('../images/background-pattern1.jpg'); /* Replace 'background-pattern.png' with your actual image file path */
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-position: center center;
+}
+
+
+
+/* Header Styles */
+header {
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ed1010;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#logo img {
+    height: 100px; /* Increased logo height */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* About Us Section Styles */
+#about {
+    /* background-color: #f7f7f7; */
+    background-color: none;
+    
+    padding: 40px 0;
+}
+
+#about.container {
+    /* Existing container styles */
+
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    color: #ec0a0a;
+}
+
+/* Client Companies Scrolling Section Styles */
+#client-companies {
+    /* background-color: #f7f7f7; */
+    /* background-image: url("../images/about.jpg"); */
+    background: none;
+    padding: 40px 0;
+}
+
+#client-companies h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.client-scroll-container {
+    overflow: hidden;
+}
+
+.client-scroll {
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.client-scroll img {
+    max-width: 240px; /* Increased max-width for company logos */
+    margin: 0 20px;
+    display: inline-block;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Section Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service, .portfolio-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.service img, .portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.service h3, .portfolio-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.service p, .portfolio-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Form Styles */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Social Media Section Styles */
+#social-media {
+    background-color: #333; /* Background color for the social media section */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#social-media h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icon img {
+    width: 40px; /* Adjust the size of social media icons */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Add a hover effect to enlarge the icons */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+/* Utility Class */
+.btn {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e74c3c;
+}
+
+/* Subtle Texture Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+    z-index: -1;
+}
